@@ -29,6 +29,5 @@ jobs:
         publish_dir: ./HackNoSense.Wasm/bin/${{env.config}}/${{env.framework}}/dist/
         publish_branch: pages
         enable_jekyll: false
-    - run: rm -r ./${{env.repo}}.*/bin
-    - run: rm -r ./${{env.repo}}.*/obj
+
     
