@@ -18,7 +18,6 @@ jobs:
     steps:
     - name: initialize variables
       run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
-    - run: echo "$repo.Wasm"
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
@@ -27,6 +26,6 @@ jobs:
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./HackNoSense.Wasm/bin/${{env.config}}/${{env.framework}}/dist/
+        publish_dir: ./HackNoSense.Wasm/bin/$config/$framework/dist/
         publish_branch: pages
         enable_jekyll: false
