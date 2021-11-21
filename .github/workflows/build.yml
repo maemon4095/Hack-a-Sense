@@ -16,7 +16,8 @@ jobs:
       framework: 'net5.0'
       config: 'Release'
     steps:
-    - run: echo "$(echo ${{ github.repository }} | sed -e 's|.*/||g')"
+    - run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
+    - run: echo "$repo"
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
