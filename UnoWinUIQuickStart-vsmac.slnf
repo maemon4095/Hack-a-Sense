@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "UnoWinUIQuickStart.sln",
+    "projects": [
+		"UnoWinUIQuickStart.Shared\\UnoWinUIQuickStart.Shared.shproj",
+
+
+
+		"UnoWinUIQuickStart.Wasm\\UnoWinUIQuickStart.Wasm.csproj",
+
+
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "solution": {
+    "path": "HackNoSense.sln",
+    "projects": [
+		"HackNoSense.Shared\\HackNoSense.Shared.shproj",
+
+
+
+
+		"HackNoSense.Wasm\\HackNoSense.Wasm.csproj",
+
+
+
+    ]
+  }
+}
