@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj": {}
+    "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj": {
+    "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj",
+        "projectUniqueName": "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj",
         "projectName": "HackNoSense",
-        "projectPath": "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj",
+        "projectPath": "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\HackNoSense.Uwp.csproj",
         "packagesPath": "C:\\Users\\maemon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\obj\\",
+        "outputPath": "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

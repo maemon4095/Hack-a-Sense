@@ -1,0 +1,29 @@
+name: build
+
+on:
+  pull_request:
+    branches:
+      - "master"
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    env:
+      framework: 'net5.0'
+      config: 'Release'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - run: dotnet build ./MaemonBlog.Wasm/MaemonBlog.Wasm.csproj -c $config -f $framework
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./HackNoSense.Wasm/bin/${{env.config}}/${{env.framework}}/dist/
+        publish_branch: pages
+        enable_jekyll: false

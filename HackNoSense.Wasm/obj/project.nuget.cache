@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MTl8pBEHfyinCWQBD2xbmk/XHdZXZm3QSWsyqvrvCq8Un26FgcHj6m2XGFNrvwgC8D6LsOpXwcG4iSP8ncD+bQ==",
+  "dgSpecHash": "me7IBJV+YY4H8J+E2zlYLeyjoo8agCkQ8DrReImSFuY9cX271mNRa056vM6IFXojkRHZOG+cjuzaRsfJkgXZew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\maemon\\Source\\Repos\\maemon4095\\HackNoSense\\HackNoSense.Wasm\\HackNoSense.Wasm.csproj",
+  "projectFilePath": "C:\\Users\\maemon\\source\\repos\\maemon4095\\HackNoSense\\HackNoSense.Wasm\\HackNoSense.Wasm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maemon\\.nuget\\packages\\commonservicelocator\\2.0.5\\commonservicelocator.2.0.5.nupkg.sha512",
     "C:\\Users\\maemon\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
