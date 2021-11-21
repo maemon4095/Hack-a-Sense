@@ -17,7 +17,7 @@ jobs:
       config: 'Release'
       repo: $(echo ${{ github.repository }} | sed -e 's|.*/|/')
     steps:
-    - run: "$repo"
+    - run: echo "$repo"
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
