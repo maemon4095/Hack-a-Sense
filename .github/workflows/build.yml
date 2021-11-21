@@ -17,8 +17,8 @@ jobs:
       config: 'Release'
     steps:
     - name: initialize variables
-    - run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
-    - run: echo "$repo.Wasm"
+      run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
+      run: echo "$repo.Wasm"
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
