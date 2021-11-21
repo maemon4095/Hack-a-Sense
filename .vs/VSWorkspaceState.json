@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HackNoSense.Wasm\\bin\\Release",
+    "\\HackNoSense.Wasm\\bin\\Release\\net5.0\\ref"
   ],
   "SelectedNode": "\\HackNoSense.sln",
   "PreviewInSolutionExplorer": false
