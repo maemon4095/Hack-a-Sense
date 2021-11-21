@@ -20,7 +20,7 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - run: dotnet build ./MaemonBlog.Wasm/MaemonBlog.Wasm.csproj -c $config -f $framework
+    - run: dotnet build ./HackNoSense.Wasm/HackNoSense.Wasm.csproj -c $config -f $framework
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
