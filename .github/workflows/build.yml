@@ -16,7 +16,6 @@ jobs:
       framework: 'net5.0'
       config: 'Release'
     steps:
-    - run: echo "$(echo ${{ github.repository }} | awk -F '/' '{print $NF}')"
     - name: initialize variables
       run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
     - uses: actions/checkout@v2
