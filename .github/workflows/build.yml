@@ -21,6 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - run: dotnet publish -c $config -f $framework
+    - name: replace base url
+      run: sed -e 'e|<base href="/"/>|<base href="${{env.repo}}/">|g' "./${{env.repo}}/bin/${{env.config}}/${{env.framework}}/publish/wwwroot/index.html"
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
