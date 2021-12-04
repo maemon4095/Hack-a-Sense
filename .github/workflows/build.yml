@@ -16,8 +16,6 @@ jobs:
       framework: 'net5.0'
       config: 'Release'
     steps:
-    - name: initialize variables
-      run: echo "repo=$(echo ${{ github.repository }} | sed -e 's|.*/||g')" >> $GITHUB_ENV
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
@@ -29,5 +27,3 @@ jobs:
         publish_dir: ./${{env.repo}}/bin/${{env.config}}/${{env.framework}}/publish/wwwroot
         publish_branch: pages
         enable_jekyll: false
-
-    
