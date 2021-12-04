@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:43899/",
+      "applicationUrl": "http://localhost:43899/HackNoSense",
       "sslPort": 44303
     }
   },
