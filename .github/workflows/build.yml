@@ -27,5 +27,3 @@ jobs:
         publish_dir: ./${{env.repo}}/bin/${{env.config}}/${{env.framework}}/publish/wwwroot
         publish_branch: pages
         enable_jekyll: false
-
-    
