@@ -21,12 +21,12 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
-    - run: dotnet build ./$repo.Wasm/$repo.Wasm.csproj -c $config -f $framework
+        dotnet-version: 6.0.x
+    - run: dotnet publich -c $config -f $framework
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./${{env.repo}}.Wasm/bin/${{env.config}}/${{env.framework}}/dist/
+        publish_dir: ./${{env.repo}}/bin/${{env.config}}/${{env.framework}}/publish/wwwroot
         publish_branch: pages
         enable_jekyll: false
 
