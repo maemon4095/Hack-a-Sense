@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build
     env:
-      framework: 'net6.0'
+      framework: 'net5.0'
       config: 'Release'
     steps:
     - name: initialize variables
@@ -22,7 +22,7 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-    - run: dotnet publish -c $config -f $framework
+    - run: dotnet publich -c $config -f $framework
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
