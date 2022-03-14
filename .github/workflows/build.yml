@@ -15,11 +15,12 @@ jobs:
           SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
-          echo ${GITHUB_REF##*/} 
-          git pull
+          echo ${GITHUB_REF##*/}
           git branch -a
           git checkout $DST_BRANCH
+          git pull
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} $SRC_DIR
           git add -A
+          git commit
           git push origin $DST_BRANCH
