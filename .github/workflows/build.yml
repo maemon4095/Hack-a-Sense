@@ -15,7 +15,7 @@ jobs:
           SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
-          files=$(find $SRC_FOLDER_PATH -type f)
+          files=$(find $SRC_DIR -type f)
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git fetch
