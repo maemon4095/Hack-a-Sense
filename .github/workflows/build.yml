@@ -16,9 +16,9 @@ jobs:
           DST_BRANCH: 'pages'
         run: |
           echo ${GITHUB_REF##*/}
+          git pull
           git branch -a
           git checkout $DST_BRANCH
-          git pull
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} $SRC_DIR
           git add -A
