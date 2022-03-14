@@ -8,9 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: copy to pages
-    uses: actions/checkout@v3
-    with:
-      ref: pages
-      path: articles
+    steps:
+      - uses: actions/checkout@v3
+        name: copy to pages
+        with:
+          ref: pages
+          path: articles
 
