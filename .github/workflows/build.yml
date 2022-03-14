@@ -15,4 +15,5 @@ jobs:
           SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
-          git checkout '${{ github.repository }}' -- $SRC_DIR
+          echo '${{ GITHUB_REF##*/ }}' 
+          git checkout '${{ GITHUB_REF##*/ }}' -- $SRC_DIR
