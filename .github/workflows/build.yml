@@ -15,13 +15,13 @@ jobs:
           SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
-          files=$(find $SRC_DIR -type f)
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git fetch
           git switch $DST_BRANCH
           git rm -rf *
-          git restore --source ${GITHUB_REF##*/} $files
+          git restore --source ${GITHUB_REF##*/} $SRC_DIR
+          mv root/* .
           git add -A
           git commit -m "copy from main"
-          git push origin $DST_BRANCH
+          git push
