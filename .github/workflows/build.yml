@@ -22,5 +22,6 @@ jobs:
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} $SRC_DIR
           git add -A
+          mv root/* .
           git commit -m "copy from main"
           git push
