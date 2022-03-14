@@ -16,4 +16,6 @@ jobs:
           DST_BRANCH: 'pages'
         run: |
           echo ${GITHUB_REF##*/} 
-          git checkout ${GITHUB_REF##*/}  -- $SRC_DIR
+          git checkout $DST_BRANCH
+          git rm -rf *
+          git restore --source ${GITHUB_REF##*/} $SRC_DIR
