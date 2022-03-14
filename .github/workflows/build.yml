@@ -21,3 +21,5 @@ jobs:
           git checkout $DST_BRANCH
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} $SRC_DIR
+          git add -A
+          git puch origin $DST_BRANCH
