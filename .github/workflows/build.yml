@@ -15,6 +15,4 @@ jobs:
           SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
-          files=$(find $SRC_DIR -type f)
-          echo "$files"
-          git checkout $DST_BRANCH -- $files
+          git checkout '${{ github.repository }}' -- $SRC_DIR
