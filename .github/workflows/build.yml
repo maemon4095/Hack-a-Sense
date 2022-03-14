@@ -18,9 +18,9 @@ jobs:
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git pull
-          git checkout $DST_BRANCH
+          git switch $DST_BRANCH
           git rm -rf *
-          git restore --source ${GITHUB_REF##*/} $SRC_DIR
+          git restore --source ${GITHUB_REF##*/} $SRC_DIR/*
           git add -A
           git commit -m "copy from main"
           git push origin $DST_BRANCH
