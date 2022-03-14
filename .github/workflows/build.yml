@@ -21,7 +21,7 @@ jobs:
           git fetch
           git switch $DST_BRANCH
           git rm -rf *
-          git restore --source ${GITHUB_REF##*/} $SRC_DIR
+          git restore --source ${GITHUB_REF##*/} $files
           git add -A
           git commit -m "copy from main"
           git push origin $DST_BRANCH
