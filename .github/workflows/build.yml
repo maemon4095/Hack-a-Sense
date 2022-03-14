@@ -22,4 +22,4 @@ jobs:
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} $SRC_DIR
           git add -A
-          git puch origin $DST_BRANCH
+          git push origin $DST_BRANCH
