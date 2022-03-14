@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: copy to pages
         env: 
-          SRC_DIR: 'root'
           DST_BRANCH: 'pages'
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
@@ -20,8 +19,7 @@ jobs:
           git fetch
           git switch $DST_BRANCH
           git rm -rf *
-          git restore --source ${GITHUB_REF##*/} $SRC_DIR
+          git restore --source ${GITHUB_REF##*/} docs
           git add -A
-          mv "${{ env.SRC_DIR }}/*" .
           git commit -m "copy from main"
           git push
