@@ -1,6 +1,3 @@
-collections:
-defaults:
-future: true
 plugins:
   - jekyll-avatar
   - jekyll-feed
