@@ -23,6 +23,10 @@ header {
     display: flex;
     align-items: center;
     align-content: space-around;
+    justify-content: space-between;
   }
 }
 
+.logo-text {
+  color: antiquewhite;
+}
