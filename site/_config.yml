@@ -11,5 +11,5 @@ kramdown:
     default_lang: plaintext
 sass:
   sass_dir: assets/sass
-  style: compressed
+  style: expanded
 strict_front_matter: true
