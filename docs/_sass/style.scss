@@ -1,36 +1,11 @@
 body {
-  font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #ddd;
   background-color: #333;
-  @include box-shadow(inset 0 3px 30px rgba(0,0,0,.3));
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  margin: 0;
-}
-
-header,
-section,
-footer {
-  float: left;
-  width: 100%;
-  clear: both;
 }
 
 header {
+  display: flex;
+  height: min(50px);
   padding: 15px;
   background: darken(#333, 3%);
-
-  h1,
-  nav { display: inline-block; }
-
-  .flexbox {
-    display: flex;
-    height: 50px;
-
-    & > * { margin: auto }
-  }
 }
