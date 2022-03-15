@@ -19,7 +19,8 @@ jobs:
           git fetch
           git switch $DST_BRANCH
           git rm -rf *
-          git restore --source ${GITHUB_REF##*/} docs
+          git restore --source ${GITHUB_REF##*/} site
+          mv site/* .
           git add -A
           git commit -m "copy from main"
           git push
