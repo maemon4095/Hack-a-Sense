@@ -11,13 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: copy to pages
-        env: 
-          DST_BRANCH: 'pages'
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git fetch
-          git switch $DST_BRANCH
+          git switch pages
           git rm -rf *
           git restore --source ${GITHUB_REF##*/} site
           mv site/* .
