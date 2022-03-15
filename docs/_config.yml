@@ -18,4 +18,3 @@ kramdown:
 sass:
   style: compressed
 strict_front_matter: true
-theme: jekyll-theme-midnight
