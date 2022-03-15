@@ -1,4 +1,4 @@
-<header>
+<header id="header">
     <div class="flexbox">
         <a class="logo-text" href="{{ '/' | relative_url }}">Hack No Sense</a>
 
@@ -7,4 +7,18 @@
             <a href="https://github.com/maemon4095/HackNoSense">GitHub</a>
         </div>
     </div>
+    <script type="text/javascript">
+        const header = document.getElementById("header");
+        const headerHeight = header.clientHeight;
+
+        let scrollY = 0;
+        let position = 0;
+
+        window.addEventListener("scroll", () => {
+            let delta = window.scrollY - scrollY;
+            scrollY = window.scrollY;
+            position = Math.max(Math.min(headerHeight, position + delta), 0);
+            header.style.top = `${-position}px`;
+        });
+    </script>
 </header>
