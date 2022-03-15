@@ -3,31 +3,24 @@ html{
   font-size: 100%;
 }
 
-$header-padding:15px;
-$header-flexbox-height:80px;
-
 body {
-  padding-top: $header-padding * 2 + $header-flexbox-height;
   color: $main-color;
   background-color: $main-bg-color;
-  margin-left:auto;
-  margin-right:auto;
-  width: 61.8%;
+  margin:auto;
 }
   
 header {
-  position: fixed;
+  position: sticky;
   box-sizing: border-box;
   top: 0;
   left: 0;
   width: 100%;
-  padding:$header-padding;
+  padding:15px;
   background-color: rgba($main-bg-dark-color, 0.7);
   mix-blend-mode: normal;
   backdrop-filter: blur(6px);
     
   .flexbox {
-    height:$header-flexbox-height;
     display: flex;
     column-gap: 20px;
     align-items: center;
@@ -40,6 +33,11 @@ header {
 
 .logo-text {
   color: antiquewhite;
+}
+
+.content-root {
+  margin: auto;
+  width: 61.8%;
 }
 
 hr {
