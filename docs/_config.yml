@@ -46,7 +46,3 @@ kramdown:
 sass:
   style: compressed
 strict_front_matter: true
-exclude:
-  - ".gitignore"
-  - ".jekyll-cache"
-  - README.md
