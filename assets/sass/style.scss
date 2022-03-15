@@ -3,7 +3,7 @@ html{
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 70px;
   color: $main-color;
   background-color: $main-bg-color;
   margin-left:auto;
@@ -16,14 +16,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height:100px;
   padding: 15px;
   background-color: $main-bg-dark-color;
-  opacity:70%;
+  mix-blend-mode: screen;
   backdrop-filter: blur(10px);
     
   .flexbox {
+    all:initial;
     display: flex;
+    height:70px;
     column-gap: 20px;
     align-items: center;
   }
