@@ -19,8 +19,8 @@ header {
   width: 100%;
   padding: 15px;
   background-color: $main-bg-dark-color;
-  mix-blend-mode: screen;
-  backdrop-filter: blur(10px);
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(6px);
     
   .flexbox {
     display: flex;
