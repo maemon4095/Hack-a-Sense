@@ -1,13 +1,13 @@
 body {
-  color: #ddd;
-  background-color: #333;
-}
-
+    color: #ddd;
+    background-color: #333;
+  }
+  
 header {
   height: min(50px);
   padding: 15px;
   background: darken(#333, 3%);
-  
+    
   .flexbox {
     display: flex;
     align-items: stretch;
