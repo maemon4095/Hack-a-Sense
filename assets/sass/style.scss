@@ -18,8 +18,8 @@ header {
   left: 0;
   width: 100%;
   padding: 15px;
-  background-color: $main-bg-dark-color;
-  mix-blend-mode: overlay;
+  background-color: rgba($main-bg-dark-color, 0.7);
+  mix-blend-mode: normal;
   backdrop-filter: blur(6px);
     
   .flexbox {
