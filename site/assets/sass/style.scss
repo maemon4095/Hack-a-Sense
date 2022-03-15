@@ -1,4 +1,5 @@
 html{
+  font-family: 'Noto Sans JP', sans-serif;
   box-sizing: border-box;
   font-size: 100%;
 }
@@ -17,8 +18,7 @@ header {
   width: 100%;
   padding:15px;
   background-color: rgba($main-bg-dark-color, 0.7);
-  mix-blend-mode: screen;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
     
   .flexbox {
     display: flex;
