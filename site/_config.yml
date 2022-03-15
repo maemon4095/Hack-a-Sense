@@ -9,12 +9,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
-feed:
-  categories:
-  - release
 kramdown:
   syntax_highlighter_opts:
     default_lang: plaintext
 sass:
+  sass_dir: /assets/sass
   style: compressed
 strict_front_matter: true
