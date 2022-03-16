@@ -40,6 +40,11 @@ hr {
   width: 61.8%;
 }
 
+.logo {
+  border: $main-border-color;
+  object-fit: contain;
+}
+
 .link-button {
   background-color: $main-button-color;
   text-decoration: none;
