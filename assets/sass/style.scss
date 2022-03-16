@@ -57,3 +57,13 @@ hr {
     box-shadow: 0 8px 10px -10px $main-color;
   }
 }
+
+.row {
+  display:flex;
+  justify-content: space-between;
+  box-sizing:border-box;
+  gap: 1em;
+  & > *{
+    flex:1;
+  }
+}
