@@ -39,3 +39,16 @@ hr {
   margin: auto;
   width: 61.8%;
 }
+
+.link-button {
+  background-color: $main-button-color;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: $main-color;
+  transition: all 250ms ease-out;
+  border: 1px solid $main-border-color;
+  &:hover {
+    border: 1px solid $main-button-color;
+    box-shadow: 0 8px 10px -10px $main-color;
+  }
+}
