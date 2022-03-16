@@ -63,7 +63,10 @@ hr {
   justify-content: space-between;
   box-sizing:border-box;
   gap: 1em;
-  & > *{
+  & > * {
     flex:1;
+  }
+  & > hr {
+    flex: none;
   }
 }
