@@ -31,17 +31,15 @@ header {
   }
 }
 
-.logo-text {
-  content: "Hack\nNo\nSense";
-  color: antiquewhite;
+img {
+  object-fit: contain;
+}
 
+hr {
+  border: solid 1px $main-border-color;
 }
 
 .content-root {
   margin: auto;
   width: 61.8%;
-}
-
-hr {
-  border: solid 1px $main-border-color;
 }
