@@ -6,6 +6,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
+
+domain: maemon4095.github.io
+url: https://maemon4095.github.io
+baseurl: /HackNoSense/
+
 kramdown:
   syntax_highlighter_opts:
     default_lang: plaintext
