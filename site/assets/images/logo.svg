@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1000"
-   height="414"
+   width="100px"
+   height="41.4px"
    viewBox="0 0 264.58333 109.5375"
    version="1.1"
    id="svg5"
    shape-rendering="crispEdges"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo-small-sharp.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +26,9 @@
      showgrid="false"
      inkscape:snap-grids="false"
      units="px"
-     inkscape:zoom="0.53807938"
-     inkscape:cx="555.68009"
-     inkscape:cy="130.09233"
+     inkscape:zoom="6.0876732"
+     inkscape:cx="67.842012"
+     inkscape:cy="0.82133186"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -64,16 +64,18 @@
     <rect
        style="fill:#383c3c;fill-opacity:1;stroke:none;stroke-width:14.607;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect6323"
+       shape-rendering="geometricPrecision"
        width="264.58334"
        height="109.5375"
        x="0"
        y="0"
        inkscape:label="bg"
-       ry="27.385572"
-       rx="27.385572" />
+       ry="0"
+       rx="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:62.2675px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#dcdddd;stroke-width:0.529233;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       shape-rendering="geometricPrecision"
        x="84.891891"
        y="78.803207"
        id="text2195"
@@ -86,6 +88,7 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.594px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#dcdddd;fill-opacity:1;stroke:none;stroke-width:0.341954"
+       shape-rendering="geometricPrecision"
        x="10.789599"
        y="48.599453"
        id="text1221"
@@ -98,6 +101,7 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.4762px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#dcdddd;fill-opacity:1;stroke:none;stroke-width:0.341071"
+       shape-rendering="geometricPrecision"
        x="134.23126"
        y="96.13443"
        id="text3585"
@@ -107,5 +111,17 @@
          x="134.23126"
          y="96.13443"
          id="tspan3587">Sense</tspan></text>
+    <path
+       style="fill:#dcdddd;fill-opacity:1;stroke:none;stroke-width:2.64583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 198.4375,0 264.58333,27.384374 264.58334,0 Z"
+       id="path3655"
+       shape-rendering="geometricPrecision"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#dcdddd;fill-opacity:1;stroke:none;stroke-width:2.64583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0,82.153123 66.145833,109.5375 0,109.5375 Z"
+       id="path3655-6"
+       shape-rendering="geometricPrecision"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>
