@@ -9,7 +9,7 @@ plugins:
 
 domain: maemon4095.github.io
 url: https://maemon4095.github.io
-baseurl: /HackNoSense/
+baseurl: /HackNoSense
 
 kramdown:
   syntax_highlighter_opts:
