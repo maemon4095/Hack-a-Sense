@@ -1,7 +1,6 @@
 ---
-title: 初投稿
-tags: 雑記
+title: hello
+tags: csharp
 ---
 
-Github Pagesでホストしたサイトを作ってみました．
-今までQiitaとかに投稿していたものをこっちで投稿していきます．
+# 初めての記事

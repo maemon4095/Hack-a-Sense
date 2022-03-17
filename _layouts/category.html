@@ -3,7 +3,6 @@ layout: default
 ---
 <h1>Category : {{ page.category }}</h1>
 <hr>
-{% if site.tags[page.category] %}
 <ul>
     {% assign post_by_date = site.tags[page.category] | sort:"date" %}
     {% for post in post_by_date %}
@@ -14,4 +13,3 @@ layout: default
     </li>
     {% endfor %}
 </ul>
-{% endif %}
