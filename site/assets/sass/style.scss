@@ -37,14 +37,6 @@ hr {
   border: solid 1px $main-border-color;
 }
 
-a {
-  text-decoration: none;
-  color:$main-link-color;
-  &:visited {
-    color:darken($main-link-color, 30%);
-  }
-}
-
 .content-root {
   margin: auto;
   width: 61.8%;
@@ -60,12 +52,24 @@ a {
   background-color: $main-button-color;
   text-decoration: none;
   padding: 0.5em 1em;
-  color: $main-color;
+  color: $main-color !important;
   transition: all 250ms ease-out;
   border: 2px solid $main-border-color;
   &:hover {
     border: 2px solid $main-button-color;
     box-shadow: 0 0px 10px -4px $main-color;
+  }
+}
+
+.link-text  {
+  text-decoration: none;
+  color:$main-link-color;
+  &:visited {
+    color:darken($main-link-color, 40%);
+  }
+
+  &:hover {
+    filter:drop-shadow(0 0px 3px #000);
   }
 }
 

@@ -8,7 +8,7 @@ layout: default
     {% assign post_by_date = site.tags[page.category] | sort:"date" %}
     {% for post in post_by_date %}
     <li>
-        <a href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}" class="link-text">
             {{ post.title }}
         </a>
     </li>
