@@ -39,9 +39,9 @@ hr {
 
 a {
   text-decoration: none;
-  color:$main-color;
+  color:$main-link-color;
   &:visited {
-    color:darken($main-color, 30%);
+    color:darken($main-link-color, 30%);
   }
 }
 
