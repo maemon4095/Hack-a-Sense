@@ -9,7 +9,7 @@ layout: default
     <div>
         <h1>Posts</h1>
         <ul>
-            {% assign post_by_date = site.posts | sort:"date" %}
+            {% assign post_by_date = site.posts | sort:"date" | reverse %}
             {% for post in post_by_date %}
             <li>
                 <a href="{{ post.url | relative_url }}">
@@ -31,7 +31,7 @@ layout: default
                     {{ tag_name }}
                 </a>
                 <ul>
-                    {% assign post_by_date = tag[1] | sort:"date" %}
+                    {% assign post_by_date = tag[1] | sort:"date" | reverse %}
                     {% for post in post_by_date %}
                     {% unless post.tags contains '雑記' %}
                     <li>
