@@ -5,7 +5,7 @@ layout: default
 <hr>
 {% if site.tags[page.category] %}
 <ul>
-    {% assign post_by_date = site.tags[page.category] | sort:"date" %}
+    {% assign post_by_date = site.tags[page.category] | sort:"date" | reverse %}
     {% for post in post_by_date %}
     {% unless page.category != '雑記' and post.tags contains '雑記' %}
     <li>
