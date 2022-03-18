@@ -18,8 +18,8 @@
         window.addEventListener("scroll", () => {
             let delta = window.scrollY - scrollY;
             scrollY = window.scrollY;
-            position = Math.max(Math.min(headerHeight, position + delta), 0);
-            header.style.top = `${-position}px`;
+            position = Math.min(Math.max(-headerHeight, position + delta / 4), 0);
+            header.style.top = `${position}px`;
         });
     </script>
 </header>
