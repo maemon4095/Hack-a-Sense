@@ -1,31 +1,15 @@
 ---
 layout: default
 ---
-<style>
-    .post-title {
-        display: flex;
-        justify-content: left;
-    }
-
-    .post-title>* {
-        width: fit-content;
-    }
-
-    .post-title>div {
-        display: flex;
-        justify-content: left;
-        align-items: end;
-        margin-left: auto;
-        gap: 0.5em;
-    }
-</style>
-
-<div class="post-title">
-    <h1>{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
+<div style="display: flex;">
     <div>
+        {{ page.date | date: "%Y/%m/%d" }}
+    </div>
+    <div style="margin-left: auto;">
         tags:
         {% for tag in page.tags %}
-        <a href="{{ site.baseurl }}/pages/categories/{{ tag | slugify }}.html" class="link-text">
+        <a href="{{ site.baseurl }}/pages/categories/{{ tag | slugify }}.html">
             {{ tag }}
         </a>
         {% endfor %}

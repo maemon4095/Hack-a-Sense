@@ -7,11 +7,13 @@ layout: default
 <ul>
     {% assign post_by_date = site.tags[page.category] | sort:"date" %}
     {% for post in post_by_date %}
+    {% unless post.tags contains '雑記' %}
     <li>
-        <a href="{{ post.url | relative_url }}" class="link-text">
+        <a href="{{ post.url | relative_url }}">
             {{ post.title }}
         </a>
     </li>
+    {% endunless %}
     {% endfor %}
 </ul>
 {% endif %}
