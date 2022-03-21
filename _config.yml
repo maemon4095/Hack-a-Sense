@@ -1,15 +1,10 @@
 plugins:
-  - jekyll-avatar
-  - jekyll-feed
-  - jekyll-mentions
-  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jemoji
 
 domain: maemon4095.github.io
 url: https://maemon4095.github.io
-baseurl: /HackASense
+baseurl: /Hack-a-Sense
 
 kramdown:
   parse_block_html: true

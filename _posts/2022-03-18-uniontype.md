@@ -1,6 +1,7 @@
 ---
 title: 共用体で重ねられる型
 tags: csharp
+last_modified: 2022-03-22
 ---
 
 {% include table_of_contents.md %}
@@ -63,7 +64,7 @@ struct C
 
     public struct E
     {
-        public string stringValue;
+        public string objectValue;
         public int intValue;
     }
 
