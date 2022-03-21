@@ -12,8 +12,10 @@ url: https://maemon4095.github.io
 baseurl: /HackNoSense
 
 kramdown:
+  parse_block_html: true
+  highlighter: none
   syntax_highlighter_opts:
-    default_lang: plaintext
+    disable: true
 
 sass:
   sass_dir: assets/sass

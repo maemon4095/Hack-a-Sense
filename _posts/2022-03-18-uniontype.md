@@ -3,6 +3,8 @@ title: 共用体で重ねられる型
 tags: csharp
 ---
 
+{% include table_of_contents.md %}
+
 C#では型に`System.Runtime.InteropServices`名前空間の`StructLayout(LayoutKind)`属性をつけることでレイアウトを指定できます．
 
 詳しい解説は[こちら](https://ufcpp.net/study/csharp/interop/memorylayout/)にお譲りして，`LayoutKind.Explicit`を指定したときについて解説します．
@@ -92,6 +94,43 @@ struct F<T>
 var instance = new F<int>();// TypeLoadException
 ```
 やっぱりジェネリック型はだめ．
+```cs
+struct F<T>
+{
+    [StructLayout(LayoutKind.Explicit)]
+    struct G
+    {
+        [FieldOffset(0)]
+        public int intValue;
+        [FieldOffset(0)]
+        public T tValue;
+    }
+
+    G g;
+}
+
+var instance = new F<int>();// TypeLoadException
+```
+内部クラスでもだめ．
+
+```cs
+struct F<T>
+{
+    [StructLayout(LayoutKind.Explicit)]
+    struct G
+    {
+        [FieldOffset(0)]
+        public int intValue;
+    }
+    T t;
+    G g;
+}
+
+var instance = new F<int>();// TypeLoadException
+```
+型引数を含まなくてもジェネリック型の内部な時点でだめ．
+
+ジェネリック型の内部の型もジェネリック型扱いらしいですね．
 
 # 結果
-<strong>共用体で重ねられる型は，最終的に参照と値が重ならなければなんでも良い．けどジェネリック型はだめ．</strong>
+<strong>共用体で重ねられる型は，最終的に参照と値が重ならなければなんでも良い．ジェネリック型はだめ．</strong>
