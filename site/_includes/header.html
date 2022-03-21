@@ -1,15 +1,14 @@
 <header id="header">
     <div class="content">
-        <a href="{{ '/' | relative_url }}" data-stylemod="no-link-highlight" style="grid-row: 1 / 3; grid-column: 1;">
-            <img src="{{ 'assets/images/logo.svg' | relative_url }}" style="object-fit:contain;">
+        <a href="{{ '/' | relative_url }}" data-stylemod="no-link-highlight"
+            style="grid-row: 1 / 3; grid-column: 1; height: 100%;">
+            <img src="{{ 'assets/images/logo-small.svg' | relative_url }}" style="object-fit:contain; height: 100%;">
         </a>
-        <div id="header-reserved" style="background-color: red;
-                grid-column: 2;
-                grid-row: 2;">
+        <div id="header-reserved" style="grid-column: 3; grid-row: 2;">
         </div>
         <!-- 検索 追加予定 -->
         <a class="link-button" href="https://github.com/maemon4095/HackNoSense"
-            style="grid-row: 1 / 3; grid-column: 3;">GitHub</a>
+            style="grid-row: 1 / 3; grid-column: 5;">GitHub</a>
     </div>
     <script type="text/javascript">
         const header = document.getElementById("header");

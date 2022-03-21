@@ -1,5 +1,5 @@
-<div>
+<nav>
 * TOC
 {:toc}
 <hr>
-</div>
+</nav>
