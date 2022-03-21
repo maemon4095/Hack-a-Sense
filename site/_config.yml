@@ -9,7 +9,7 @@ plugins:
 
 domain: maemon4095.github.io
 url: https://maemon4095.github.io
-baseurl: /HackNoSense
+baseurl: /HackASense
 
 kramdown:
   parse_block_html: true
