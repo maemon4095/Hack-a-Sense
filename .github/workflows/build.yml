@@ -1,6 +1,9 @@
 name: build
 
 on:
+  pull_request:
+    branches:
+      - "main"
   push:
     branches:
       - "main"
@@ -8,17 +11,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Build
+    env:
+      framework: 'net6.0'
+      config: 'Release'
+      output: './publish'
     steps:
-      - uses: actions/checkout@v3
-      - name: copy to pages
-        run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git fetch
-          git switch pages
-          git rm -rf *
-          git restore --source ${GITHUB_REF##*/} site
-          mv site/* .
-          git add -A
-          git commit -m "copy from main"
-          git push
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - run: dotnet publish -c $config -f $framework -o $output
+    - name: replace base url
+      run: sed -i -e 's|<base href="/"/>|<base href="${{github.repository}}/">|g' ${{env.output}}/wwwroot/index.html
+    - run: cat ${{env.output}}/wwwroot/index.html
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ${{env.output}}/wwwroot
+        publish_branch: pages
+        enable_jekyll: false
