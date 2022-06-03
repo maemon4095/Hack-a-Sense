@@ -8,7 +8,21 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.3" PrivateAssets="all" />  
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <Using Include="System.Text.RegularExpressions"/>
+    <Using Include="System.Net.Http"/>
+    <Using Include="System.Net.Http.Json"/>
+    <Using Include="Microsoft.AspNetCore.Components.Forms"/>
+    <Using Include="Microsoft.AspNetCore.Components.Routing"/>
+    <Using Include="Microsoft.AspNetCore.Components.Web"/>
+    <Using Include="Microsoft.AspNetCore.Components.Web.Virtualization"/>
+    <Using Include="Microsoft.AspNetCore.Components.WebAssembly.Http"/>
+    <Using Include="Microsoft.JSInterop"/>
+    <Using Include="HackASense"/>
+    <Using Include="HackASense.Shared"/>
   </ItemGroup>
 
 </Project>
