@@ -7,5 +7,21 @@ name = "bundler"
 version = "0.1.0"
 
 [[package]]
-name = "vari-yaml"
+name = "easyaml"
 version = "0.1.0"
+dependencies = [
+ "inline-collection",
+]
+
+[[package]]
+name = "inline-collection"
+version = "0.1.0"
+source = "git+https://github.com/maemon4095/inline-collection?branch=main#8ebc5c893aed35a9eb55ea6cd2ea0d6635f1532b"
+dependencies = [
+ "memory-testing-utils",
+]
+
+[[package]]
+name = "memory-testing-utils"
+version = "0.0.0"
+source = "git+https://github.com/maemon4095/memory-testing-utils#9feb4b783eb3d6e2016914059d0f55e69183132e"
